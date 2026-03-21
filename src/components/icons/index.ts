@@ -1,0 +1,7 @@
+export { OnlineZooIcon } from './OnlineZooIcon.tsx';
+export { YemDigitalIcon } from './YemDigitalIcon.tsx';
+export { RSSchoolIcon } from './RSSchoolIcon.tsx';
+export { FaceBookIcon } from './FaceBookIcon.tsx';
+export { YouTubeIcon } from './YouTubeIcon.tsx';
+export { InstagramIcon } from './InstagramIcon.tsx';
+export { RightArrowIcon } from './RightArrowIcon.tsx';
