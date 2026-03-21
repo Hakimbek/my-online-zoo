@@ -7,6 +7,7 @@ import {
   FaceBookIcon,
   RightArrowIcon,
 } from '../icons';
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 export const Footer = () => {
@@ -14,10 +15,10 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerTop}>
         <div className={styles.logoIcons}>
-          <a target="_blank" href="#">
-            <OnlineZooIcon />
-          </a>
-          <a target="_blank" href="#">
+          <Link to="/about">
+            <OnlineZooIcon fill="white" />
+          </Link>
+          <a href="#">
             <YemDigitalIcon />
           </a>
           <a target="_blank" href="https://rs.school/">
@@ -26,16 +27,16 @@ export const Footer = () => {
         </div>
         <ul className={styles.navigationList}>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#">Map</a>
+            <Link to="/map">Map</Link>
           </li>
           <li>
-            <a href="#">Zoos</a>
+            <Link to="/zoos">Zoos</Link>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <Link to="/contact">Contact us</Link>
           </li>
         </ul>
         <button className={styles.donationButton}>
@@ -47,32 +48,28 @@ export const Footer = () => {
       <div className={styles.horizontalLine}></div>
       <div className={styles.footerBottom}>
         <div className={styles.socialMediaIcons}>
-          <a target="_blank" href="#">
+          <Link to="#">
             <YouTubeIcon />
-          </a>
-          <a target="_blank" href="#">
+          </Link>
+          <Link to="#">
             <InstagramIcon />
-          </a>
-          <a target="_blank" href="#">
+          </Link>
+          <Link to="#">
             <FaceBookIcon />
-          </a>
+          </Link>
         </div>
         <div className={styles.horizontalLine}></div>
         <ul className={styles.copyrightList}>
           <li>
-            <a target="_blank" href="#">
-              © 2021 DinaK
-            </a>
+            <Link to="#">© 2021 DinaK</Link>
           </li>
           <li>
-            <a target="_blank" href="#">
-              © Yem Digital
-            </a>
+            <Link to="#">© Yem Digital</Link>
           </li>
           <li>
-            <a target="_blank" href="https://rs.school/">
+            <Link target="_blank" to="https://rs.school/">
               © RSSchool
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

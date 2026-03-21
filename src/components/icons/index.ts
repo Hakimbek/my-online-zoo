@@ -5,3 +5,5 @@ export { FaceBookIcon } from './FaceBookIcon.tsx';
 export { YouTubeIcon } from './YouTubeIcon.tsx';
 export { InstagramIcon } from './InstagramIcon.tsx';
 export { RightArrowIcon } from './RightArrowIcon.tsx';
+export { HamburgerIcon } from './HamburgerIcon.tsx';
+export { CloseIcon } from './CloseIcon.tsx';
