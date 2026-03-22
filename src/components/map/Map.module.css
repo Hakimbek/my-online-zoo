@@ -1,0 +1,218 @@
+.map {
+  position: relative;
+  padding: 20px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;
+  color: var(--navy);
+}
+
+.eagleIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  cursor: pointer;
+}
+
+.crocodileIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 49%;
+  left: 12%;
+  cursor: pointer;
+}
+
+.lionIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  cursor: pointer;
+}
+
+.gorillaIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.lemurIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  cursor: pointer;
+}
+
+.pandaIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  cursor: pointer;
+}
+
+.tigerIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  cursor: pointer;
+}
+
+.koalaIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 65%;
+  left: 75%;
+  cursor: pointer;
+}
+
+:global([data-theme='dark']) {
+  .map {
+    background-color: var(--turquoise);
+  }
+}
+
+@media (min-width: 640px) {
+  .map {
+    padding: 30px 0 100px 0;
+    gap: 50px;
+  }
+
+  .title {
+    width: 500px;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  .eagleIcon,
+  .crocodileIcon,
+  .gorillaIcon,
+  .tigerIcon,
+  .lionIcon,
+  .lemurIcon,
+  .pandaIcon,
+  .koalaIcon {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    width: 600px;
+    font-family: 'MontserratSemiBold', sans-serif;
+    font-size: 54px;
+  }
+
+  .eagleIcon,
+  .crocodileIcon,
+  .gorillaIcon,
+  .tigerIcon,
+  .lionIcon,
+  .lemurIcon,
+  .pandaIcon,
+  .koalaIcon {
+    width: 300px;
+    height: 300px;
+  }
+
+  .eagleIcon {
+    top: 40%;
+  }
+
+  .crocodileIcon {
+    top: 43%;
+  }
+
+  .lionIcon {
+    top: 45%;
+  }
+
+  .gorillaIcon {
+    top: 50%;
+  }
+
+  .lemurIcon {
+    top: 55%;
+  }
+
+  .pandaIcon {
+    top: 40%;
+  }
+
+  .tigerIcon {
+    top: 52%;
+  }
+
+  .koalaIcon {
+    top: 65%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .map {
+    padding: 40px 260px 150px 260px;
+    margin: 0 auto;
+    gap: 70px;
+  }
+
+  .eagleIcon {
+    top: 40%;
+    left: 16%;
+  }
+
+  .crocodileIcon {
+    top: 45%;
+    left: 25%;
+  }
+
+  .lionIcon {
+    top: 45%;
+    left: 40%;
+  }
+
+  .gorillaIcon {
+    top: 50%;
+    left: 45%;
+  }
+
+  .lemurIcon {
+    top: 58%;
+    left: 50%;
+  }
+
+  .pandaIcon {
+    top: 40%;
+    left: 60%;
+  }
+
+  .tigerIcon {
+    top: 52%;
+    left: 62%;
+  }
+
+  .koalaIcon {
+    top: 65%;
+    left: 70%;
+  }
+}

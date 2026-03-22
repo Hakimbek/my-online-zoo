@@ -16,6 +16,9 @@ const resources = {
         change_lang: 'EN',
         donate_for_volunteers: 'Donate for volunteers',
       },
+      zoo: {
+        title: 'Find where are the animals live',
+      },
       contact: {
         title: 'Get in touch',
         text: "Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can. Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can.",
@@ -41,7 +44,7 @@ const resources = {
     translation: {
       nav: {
         about: 'О нас',
-        zoos: 'Зоопарки',
+        zoos: 'Зоо',
         map: 'Карта',
         contact: 'Контакты',
         design: 'Дизайн',
@@ -49,6 +52,9 @@ const resources = {
       common: {
         change_lang: 'RU',
         donate_for_volunteers: 'Пожертвовать',
+      },
+      zoo: {
+        title: 'Узнайте, где живут животные',
       },
       contact: {
         title: 'Связаться',

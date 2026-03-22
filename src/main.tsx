@@ -9,6 +9,7 @@ import {
 import { RootLayout } from './layouts/RootLayout.tsx';
 import { ThemeProvider } from './context/ThemeContext.tsx';
 import { Contact } from './components/contact/Contact.tsx';
+import { Map } from './components/map/Map.tsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'map',
-        element: 'map',
+        element: <Map />,
       },
       {
         path: 'zoos',
