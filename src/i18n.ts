@@ -16,6 +16,25 @@ const resources = {
         change_lang: 'EN',
         donate_for_volunteers: 'Donate for volunteers',
       },
+      contact: {
+        title: 'Get in touch',
+        text: "Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can. Whether you have a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a message and we'll get back to you as soon as we can.",
+        name: 'Your Name',
+        email: 'Your Email Address',
+        subject: 'Subject',
+        message: 'Message',
+        send: 'Send Message',
+        placeholders: {
+          name: 'First and last name',
+          email: 'Enter your email',
+          subject: 'Enter the subject',
+          message: 'Enter your message',
+        },
+        errors: {
+          required: 'This field is required',
+          invalid_email: 'Invalid Email',
+        },
+      },
     },
   },
   ru: {
@@ -30,6 +49,25 @@ const resources = {
       common: {
         change_lang: 'RU',
         donate_for_volunteers: 'Пожертвовать',
+      },
+      contact: {
+        title: 'Связаться',
+        text: 'Если у вас есть вопрос или вы просто хотите поздороваться, мы будем рады вашему сообщению. Пожалуйста, воспользуйтесь формой, чтобы отправить нам письмо, и мы свяжемся с вами в ближайшее время.',
+        name: 'Ваше имя',
+        email: 'Ваш Email адрес',
+        subject: 'Тема',
+        message: 'Сообщение',
+        send: 'Отправить',
+        placeholders: {
+          name: 'Имя и фамилия',
+          email: 'Введите ваш email',
+          subject: 'Введите тему',
+          message: 'Введите ваше сообщение',
+        },
+        errors: {
+          required: 'Это поле обязательно',
+          invalid_email: 'Некорректный Email',
+        },
       },
     },
   },
