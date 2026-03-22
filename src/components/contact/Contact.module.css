@@ -1,0 +1,8 @@
+.contact {
+  height: 500px;
+}
+
+:global([data-theme='dark']) .contact {
+  background-color: var(--navy);
+  color: var(--white);
+}

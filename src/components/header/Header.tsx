@@ -8,6 +8,7 @@ import {
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { HeaderMobileModal } from './HeaderMobileModal.tsx';
+import { Theme } from './Theme.tsx';
 import styles from './Header.module.css';
 
 export const Header = () => {
@@ -92,6 +93,7 @@ export const Header = () => {
           <Link to="#">
             <FaceBookIcon />
           </Link>
+          <Theme />
         </div>
       </div>
       <button onClick={() => handleModal(true)} className={styles.burgerButton}>

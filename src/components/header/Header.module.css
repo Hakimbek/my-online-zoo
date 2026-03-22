@@ -34,6 +34,15 @@
   cursor: pointer;
 }
 
+.themeButton {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .disabledMobileModal {
   display: none;
 }

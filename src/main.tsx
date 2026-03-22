@@ -6,6 +6,8 @@ import {
   Navigate,
 } from 'react-router-dom';
 import { RootLayout } from './layouts/RootLayout.tsx';
+import { ThemeProvider } from './context/ThemeContext.tsx';
+import { Contact } from './components/contact/Contact.tsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'contact',
-        element: 'contact',
+        element: <Contact />,
       },
     ],
   },
@@ -39,6 +41,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>
 );
