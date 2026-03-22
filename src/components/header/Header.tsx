@@ -9,9 +9,12 @@ import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { HeaderMobileModal } from './HeaderMobileModal.tsx';
 import { Theme } from './Theme.tsx';
+import { Language } from './Language.tsx';
+import { useTranslation } from 'react-i18next';
 import styles from './Header.module.css';
 
 export const Header = () => {
+  const { t } = useTranslation();
   const [isMobileModalActive, setMobileModalActive] = useState(false);
 
   const handleModal = (isActive: boolean) => {
@@ -40,7 +43,7 @@ export const Header = () => {
                   isActive ? styles.activeLink : ''
                 }
               >
-                About
+                {t('nav.about')}
               </NavLink>
             </li>
             <li>
@@ -50,7 +53,7 @@ export const Header = () => {
                   isActive ? styles.activeLink : ''
                 }
               >
-                Map
+                {t('nav.map')}
               </NavLink>
             </li>
             <li>
@@ -60,7 +63,7 @@ export const Header = () => {
                   isActive ? styles.activeLink : ''
                 }
               >
-                Zoos
+                {t('nav.zoos')}
               </NavLink>
             </li>
             <li>
@@ -70,7 +73,7 @@ export const Header = () => {
                   isActive ? styles.activeLink : ''
                 }
               >
-                Contact us
+                {t('nav.contact')}
               </NavLink>
             </li>
             <li>
@@ -78,7 +81,7 @@ export const Header = () => {
                 to="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=0%3A1"
                 target="_blank"
               >
-                Design
+                {t('nav.design')}
               </Link>
             </li>
           </ul>
@@ -94,6 +97,7 @@ export const Header = () => {
             <FaceBookIcon />
           </Link>
           <Theme />
+          <Language />
         </div>
       </div>
       <button onClick={() => handleModal(true)} className={styles.burgerButton}>

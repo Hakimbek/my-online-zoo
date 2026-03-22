@@ -8,9 +8,12 @@ import {
   RightArrowIcon,
 } from '../icons';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import styles from './Footer.module.css';
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerTop}>
@@ -27,20 +30,20 @@ export const Footer = () => {
         </div>
         <ul className={styles.navigationList}>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">{t('nav.about')}</Link>
           </li>
           <li>
-            <Link to="/map">Map</Link>
+            <Link to="/map">{t('nav.map')}</Link>
           </li>
           <li>
-            <Link to="/zoos">Zoos</Link>
+            <Link to="/zoos">{t('nav.zoos')}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact us</Link>
+            <Link to="/contact">{t('nav.contact')}</Link>
           </li>
         </ul>
         <button className={styles.donationButton}>
-          Donate for volunteers
+          {t('common.donate_for_volunteers')}
           <RightArrowIcon />
         </button>
         <div className={styles.horizontalLine}></div>
