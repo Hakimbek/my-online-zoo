@@ -10,6 +10,7 @@ import { RootLayout } from './layouts/RootLayout.tsx';
 import { ThemeProvider } from './context/ThemeContext.tsx';
 import { Contact } from './components/contact/Contact.tsx';
 import { Map } from './components/map/Map.tsx';
+import { About } from './components/about/About.tsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'about',
-        element: 'about',
+        element: <About />,
       },
       {
         path: 'map',

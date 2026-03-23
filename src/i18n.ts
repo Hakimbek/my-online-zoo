@@ -16,6 +16,14 @@ const resources = {
         change_lang: 'EN',
         donate_for_volunteers: 'Donate for volunteers',
       },
+      about: {
+        animal: {
+          title: 'Watch your favorite animal online',
+          content:
+            'Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.',
+          button: 'View live cam',
+        },
+      },
       zoo: {
         title: 'Find where are the animals live',
       },
@@ -52,6 +60,14 @@ const resources = {
       common: {
         change_lang: 'RU',
         donate_for_volunteers: 'Пожертвовать',
+      },
+      about: {
+        animal: {
+          title: 'Наблюдай животных онлайн',
+          content:
+            'Исследуйте захватывающий и таинственный мир диких животных в их естественной среде, не выходя из дома.',
+          button: 'Смотреть',
+        },
       },
       zoo: {
         title: 'Узнайте, где живут животные',
