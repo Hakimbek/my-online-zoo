@@ -23,6 +23,14 @@ const resources = {
             'Explore the exciting and mysterious world of wild animals in a natural setting without leaving your home.',
           button: 'View live cam',
         },
+        welcome: {
+          firstTitle: 'Welcome to the Online Zoo!',
+          firstContent:
+            'On our website, using live webcams, fans of all ages can observe various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and others. It is the whole natural world in real-time in front of our cameras.',
+          secondTitle: 'How we work',
+          secondContent:
+            "Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild animals in our zoo and worldwide. To continue these efforts, we need your help. We're so grateful to our supporters. All donations, large and small, go a long way to the conservation efforts of our pets.",
+        },
       },
       zoo: {
         title: 'Find where are the animals live',
@@ -67,6 +75,14 @@ const resources = {
           content:
             'Исследуйте захватывающий и таинственный мир диких животных в их естественной среде, не выходя из дома.',
           button: 'Смотреть',
+        },
+        welcome: {
+          firstTitle: 'Добро пожаловать в Зоопарк!',
+          firstContent:
+            'На нашем сайте с помощью веб-камер в реальном времени любители природы всех возрастов могут наблюдать за различными животными. Среди них — большие панды, орлы, аллигаторы, лесные гориллы, африканские львы и многие другие. Это целый мир дикой природы в прямом эфире прямо перед нашими камерами.',
+          secondTitle: 'Как мы работаем',
+          secondContent:
+            'Онлайн-Зоопарк — это некоммерческая организация, стремящаяся вдохновлять людей на сохранение природы и диких животных как в нашем зоопарке, так и по всему миру. Чтобы продолжать эту работу, нам нужна ваша помощь. Мы искренне благодарны нашим сторонникам. Любые пожертвования, большие и малые, вносят огромный вклад в дело сохранения наших подопечных.',
         },
       },
       zoo: {
