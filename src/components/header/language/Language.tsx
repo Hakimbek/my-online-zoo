@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Translate } from 'react-bootstrap-icons';
-import styles from './Header.module.css';
+import styles from './Language.module.css';
 
 export const Language = () => {
   const { t, i18n } = useTranslation();

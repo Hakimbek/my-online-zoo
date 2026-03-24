@@ -1,7 +1,7 @@
-import { RightArrowIcon } from '../icons';
-import PandaImage from '../../assets/images/panda.png';
+import { RightArrowIcon } from '../../icons';
+import PandaImage from '../../../assets/images/panda.png';
 import { useTranslation } from 'react-i18next';
-import styles from './About.module.css';
+import styles from './Animal.module.css';
 
 export const Animal = () => {
   const { t } = useTranslation();

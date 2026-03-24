@@ -1,0 +1,115 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.welcome > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.welcome img {
+  width: 100%;
+}
+
+.welcomeContent {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.welcomeContent h2 {
+  padding: 0;
+  margin: 0;
+  color: var(--turquoise);
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.welcomeContent p {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+:global([data-theme='dark']) {
+  .welcome {
+    background-color: var(--navy);
+  }
+
+  .welcomeContent p {
+    color: var(--white);
+  }
+}
+
+@media (min-width: 640px) {
+  .welcome {
+    padding: 100px 0;
+    align-items: center;
+  }
+
+  .welcomeContent h2 {
+    font-size: 54px;
+  }
+
+  .welcome img {
+    max-width: 660px;
+  }
+
+  .welcomeContent {
+    max-width: 560px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome {
+    padding: 100px;
+  }
+
+  .welcome > div:first-child {
+    margin-right: auto;
+  }
+
+  .welcome > div:last-child {
+    margin-left: auto;
+  }
+
+  .welcomeContent {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .welcome {
+    padding: 150px 0;
+    gap: 150px;
+  }
+
+  .welcome > div {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .welcome > div:first-child {
+    flex-direction: row-reverse;
+  }
+
+  .welcome > div:last-child {
+    flex-direction: row;
+  }
+
+  .welcome img {
+    max-width: 800px;
+  }
+
+  .welcomeContent {
+    gap: 50px;
+  }
+}

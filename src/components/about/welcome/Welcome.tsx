@@ -1,7 +1,7 @@
-import WelcomeImage from '../../assets/images/welcome.png';
-import EaglesImage from '../../assets/images/eagles.png';
+import WelcomeImage from '../../../assets/images/welcome.png';
+import EaglesImage from '../../../assets/images/eagles.png';
 import { useTranslation } from 'react-i18next';
-import styles from './About.module.css';
+import styles from './Welcome.module.css';
 
 export const Welcome = () => {
   const { t } = useTranslation();

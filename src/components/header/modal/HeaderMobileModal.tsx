@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
-import { CloseIcon } from '../icons';
-import styles from './Header.module.css';
+import { CloseIcon } from '../../icons';
+import styles from './HeaderMobileModal.module.css';
 
 type HeaderMobileModalProps = {
   isActive: boolean;

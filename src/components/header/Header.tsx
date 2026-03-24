@@ -7,9 +7,9 @@ import {
 } from '../icons';
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import { HeaderMobileModal } from './HeaderMobileModal.tsx';
-import { Theme } from './Theme.tsx';
-import { Language } from './Language.tsx';
+import { HeaderMobileModal } from './modal/HeaderMobileModal.tsx';
+import { Theme } from './theme/Theme.tsx';
+import { Language } from './language/Language.tsx';
 import { useTranslation } from 'react-i18next';
 import styles from './Header.module.css';
 

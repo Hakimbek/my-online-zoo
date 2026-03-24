@@ -1,0 +1,81 @@
+.closeButton {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.disabledMobileModal {
+  display: none;
+}
+
+.mobileModal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--navy);
+  z-index: 1000;
+}
+
+.mobileModal ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  list-style: none;
+}
+
+.mobileModal ul li {
+  text-align: center;
+}
+
+.mobileModal ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'MontserratSemiBold', sans-serif;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.activeLink {
+  color: var(--turquoise) !important;
+}
+
+@media (min-width: 1200px) {
+  .navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .navLinks ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'MontserratSemiBold', sans-serif;
+    font-size: 18px;
+    color: var(--black);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navLinks ul a:hover {
+    color: var(--turquoise);
+  }
+}
+
+@media (min-width: 1920px) {
+  .navLinks ul {
+    gap: 50px;
+  }
+}

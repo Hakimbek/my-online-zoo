@@ -1,5 +1,5 @@
-import { Animal } from './Animal.tsx';
-import { Welcome } from './Welcome.tsx';
+import { Animal } from './animal/Animal.tsx';
+import { Welcome } from './welcome/Welcome.tsx';
 
 export const About = () => {
   return (
