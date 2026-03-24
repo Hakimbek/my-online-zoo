@@ -31,6 +31,13 @@ const resources = {
           secondContent:
             "Online Zoo is a nonprofit committed to inspiring awareness and preservation of nature and wild animals in our zoo and worldwide. To continue these efforts, we need your help. We're so grateful to our supporters. All donations, large and small, go a long way to the conservation efforts of our pets.",
         },
+        donation: {
+          title: 'Your donation makes a difference!',
+          content:
+            "The Online Zoo's animal webcams are some of the most famous on the internet. Tune in to watch your favourite animals — live, 24/7!",
+          subTitle: 'Quick Donate',
+          button: '$ Donation Amount',
+        },
       },
       zoo: {
         title: 'Find where are the animals live',
@@ -83,6 +90,13 @@ const resources = {
           secondTitle: 'Как мы работаем',
           secondContent:
             'Онлайн-Зоопарк — это некоммерческая организация, стремящаяся вдохновлять людей на сохранение природы и диких животных как в нашем зоопарке, так и по всему миру. Чтобы продолжать эту работу, нам нужна ваша помощь. Мы искренне благодарны нашим сторонникам. Любые пожертвования, большие и малые, вносят огромный вклад в дело сохранения наших подопечных.',
+        },
+        donation: {
+          title: 'Ваше пожертвование имеет значение!',
+          content:
+            'Веб-камеры Онлайн-Зоопарка — одни из самых известных в интернете. Присоединяйтесь, чтобы наблюдать за вашими любимыми животными в прямом эфире 24/7!',
+          subTitle: 'Быстрое пожертвование',
+          button: '$ Пожертвования',
         },
       },
       zoo: {

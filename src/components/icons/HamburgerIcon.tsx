@@ -8,8 +8,8 @@ export const HamburgerIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 0H30V2.30776H0V0ZM0 13.8476H30V16.1553H0V13.8476ZM30 27.6908H0V29.9985H30V27.6908Z"
         fill="black"
       />
