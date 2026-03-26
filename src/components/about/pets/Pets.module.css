@@ -1,0 +1,196 @@
+.pets {
+  padding: 50px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: var(--turquoise);
+}
+
+.content p {
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.carousel {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+  gap: 55px;
+}
+
+.nav button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav button path {
+  fill: var(--navy);
+}
+
+.nav button:hover {
+  background-color: var(--navy);
+}
+
+.nav button:hover path {
+  fill: var(--white);
+}
+
+.nav button:first-child {
+  transform: rotate(-180deg);
+}
+
+.slider {
+  width: 100%;
+  max-width: 300px;
+}
+
+.slideWrapper {
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.favourite {
+  margin-top: 50px;
+  display: none;
+  justify-content: center;
+}
+
+.favourite button {
+  width: 345px;
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: MontserratSemiBold, sans-serif;
+  color: var(--black);
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.favourite button path {
+  fill: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.favourite button:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.favourite button:hover path {
+  fill: var(--white);
+}
+
+@media (min-width: 640px) {
+  .pets {
+    padding: 100px 0;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .content h2 {
+    width: 390px;
+    font-size: 54px;
+  }
+
+  .content p {
+    width: 600px;
+    font-size: 26px;
+  }
+
+  .slider {
+    max-width: 620px;
+  }
+
+  .slideWrapper {
+    padding: 0 10px;
+  }
+
+  .favourite {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pets {
+    padding: 100px 0 150px 0;
+  }
+
+  .content h2 {
+    width: 650px;
+  }
+
+  .content p {
+    width: 830px;
+  }
+
+  .carousel {
+    margin-top: 100px;
+  }
+
+  .nav {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .slider {
+    max-width: 950px;
+  }
+
+  .favourite button {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .pets {
+    padding: 130px 0 150px 0;
+  }
+
+  .content p {
+    width: 920px;
+  }
+
+  .nav {
+    margin-bottom: 50px;
+  }
+
+  .slider {
+    max-width: 1440px;
+  }
+
+  .slideWrapper {
+    padding: 0 20px;
+  }
+}

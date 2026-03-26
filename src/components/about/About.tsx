@@ -1,6 +1,7 @@
 import { Animal } from './animal/Animal.tsx';
 import { Welcome } from './welcome/Welcome.tsx';
 import { Donation } from './donation/Donation.tsx';
+import { Pets } from './pets/Pets.tsx';
 
 export const About = () => {
   return (
@@ -8,6 +9,7 @@ export const About = () => {
       <Animal />
       <Welcome />
       <Donation />
+      <Pets />
     </section>
   );
 };
