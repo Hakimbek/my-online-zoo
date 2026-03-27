@@ -1,13 +1,48 @@
 import { RightArrowIcon } from '../../icons';
 import Slick from 'react-slick';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { PetCard } from '../petCard/PetCard.tsx';
+import { useTranslation } from 'react-i18next';
 import styles from './Pets.module.css';
+
+type PetDataType = {
+  id: number;
+  name: string;
+  commonName: string;
+  description: string;
+};
 
 const Slider = (Slick as unknown as { default: typeof Slick }).default || Slick;
 
 export const Pets = () => {
   const sliderRef = useRef<Slick | null>(null);
+  const { t } = useTranslation();
+  const [data, setData] = useState<PetDataType[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod/pets'
+        );
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const result = await response.json();
+        setData(result.data);
+      } catch {
+        setError('Something went wrong. Please, refresh the page');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const settings = {
     dots: false,
@@ -35,46 +70,44 @@ export const Pets = () => {
     ],
   };
 
+  if (loading) return <p>Loading...</p>;
+
   return (
     <div className={styles.pets}>
       <div className={styles.content}>
-        <h2>Meet some our Pets</h2>
-        <p>
-          Do you have a special place in your heart for animals? Who are your
-          favorites? Perhaps you'd like to donate to special ones or all our
-          pets? We think it's important for you to choose how your donation is
-          used.
-        </p>
+        <h2>{t('about.pets.title')}</h2>
+        <p>{t('about.pets.content')}</p>
+        {loading && <p>Loading...</p>}
+        {error && !loading && <p>{error}</p>}
       </div>
-      <div className={styles.carousel}>
-        <div className={styles.nav}>
-          <button onClick={() => sliderRef.current?.slickPrev()}>
-            <RightArrowIcon />
-          </button>
-          <button onClick={() => sliderRef.current?.slickNext()}>
-            <RightArrowIcon />
-          </button>
+      {!error && !loading && (
+        <div className={styles.carousel}>
+          <div className={styles.nav}>
+            <button onClick={() => sliderRef.current?.slickPrev()}>
+              <RightArrowIcon />
+            </button>
+            <button onClick={() => sliderRef.current?.slickNext()}>
+              <RightArrowIcon />
+            </button>
+          </div>
+          <div className={styles.slider}>
+            <Slider ref={sliderRef} {...settings}>
+              {data?.map(({ id, name, commonName, description }) => (
+                <div className={styles.slideWrapper} key={id}>
+                  <PetCard
+                    name={name}
+                    commonName={commonName}
+                    description={description}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
-        <div className={styles.slider}>
-          <Slider ref={sliderRef} {...settings}>
-            <div className={styles.slideWrapper}>
-              <PetCard />
-            </div>
-            <div className={styles.slideWrapper}>
-              <PetCard />
-            </div>
-            <div className={styles.slideWrapper}>
-              <PetCard />
-            </div>
-            <div className={styles.slideWrapper}>
-              <PetCard />
-            </div>
-          </Slider>
-        </div>
-      </div>
+      )}
       <div className={styles.favourite}>
         <button>
-          choose your favourite
+          {t('about.pets.favourite')}
           <RightArrowIcon />
         </button>
       </div>

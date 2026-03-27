@@ -38,6 +38,12 @@ const resources = {
           subTitle: 'Quick Donate',
           button: '$ Donation Amount',
         },
+        pets: {
+          title: 'Meet some our Pets',
+          content:
+            "Do you have a special place in your heart for animals? Who are your favorites? Perhaps you'd like to donate to special ones or all our pets? We think it's important for you to choose how your donation is used.",
+          favourite: 'Choose your favourite',
+        },
       },
       zoo: {
         title: 'Find where are the animals live',
@@ -97,6 +103,12 @@ const resources = {
             'Веб-камеры Онлайн-Зоопарка — одни из самых известных в интернете. Присоединяйтесь, чтобы наблюдать за вашими любимыми животными в прямом эфире 24/7!',
           subTitle: 'Быстрое пожертвование',
           button: '$ Пожертвования',
+        },
+        pets: {
+          title: 'Выбери любимца',
+          content:
+            'В вашем сердце есть особое место для животных? Кто из них вам нравится больше всего? Возможно, вы захотите сделать пожертвование конкретному подопечному или всем нашим питомцам сразу? Мы считаем, что для вас важно иметь возможность самим выбирать, на что пойдет ваша помощь.',
+          favourite: 'Питомцы',
         },
       },
       zoo: {

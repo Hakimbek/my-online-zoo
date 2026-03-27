@@ -110,6 +110,38 @@
   fill: var(--white);
 }
 
+:global([data-theme='dark']) {
+  .pets {
+    background-color: var(--navy);
+  }
+
+  .content p {
+    color: var(--white);
+  }
+
+  .nav button {
+    border: 1px solid var(--white);
+  }
+
+  .nav button path {
+    fill: var(--white);
+  }
+
+  .favourite button {
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+
+  .favourite button path {
+    fill: var(--white);
+  }
+
+  .nav button:hover,
+  .favourite button:hover {
+    background-color: var(--turquoise);
+  }
+}
+
 @media (min-width: 640px) {
   .pets {
     padding: 100px 0;
