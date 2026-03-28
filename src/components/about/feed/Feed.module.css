@@ -1,0 +1,201 @@
+.feed {
+  padding: 20px 0 50px 0;
+  background-color: var(--navy);
+}
+
+.feed h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: var(--white);
+}
+
+.cardWrapper {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.horizontalLine {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.horizontalLine span:first-child {
+  color: var(--white);
+  font-size: 26px;
+}
+
+.horizontalLine span:last-child {
+  width: 100%;
+  display: block;
+  border-top: 1px solid var(--white);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cardContent img {
+  width: 100%;
+}
+
+.cardContent div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cardContent h3 {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 26px;
+  color: var(--white);
+}
+
+.cardContent p {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.donateButton {
+  display: flex;
+  justify-content: center;
+}
+
+.donateButton button {
+  width: 300px;
+  padding: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.donateButton button:hover {
+  background-color: var(--dark-orange);
+}
+
+@media (min-width: 640px) {
+  .feed {
+    padding: 80px 0;
+  }
+
+  .feed h2 {
+    font-size: 54px;
+  }
+
+  .cardContent img {
+    max-width: 640px;
+  }
+
+  .card,
+  .cardContent,
+  .cardContent div {
+    gap: 50px;
+  }
+
+  .horizontalLine {
+    margin-left: 20px;
+  }
+
+  .cardContent h3,
+  .cardContent p {
+    padding: 0 20px;
+  }
+
+  .donateButton button {
+    padding: 26px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feed {
+    padding: 150px 0 100px 0;
+  }
+
+  .feed h2 {
+    margin-left: 100px;
+    text-align: start;
+  }
+
+  .cardWrapper {
+    margin: 100px 0;
+  }
+
+  .horizontalLine {
+    margin: 0 40px;
+    gap: 70px;
+  }
+
+  .cardContent {
+    margin: 0 40px;
+    flex-direction: row;
+  }
+
+  .cardContent img {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .feed h2 {
+    margin-left: 260px;
+  }
+
+  .cardWrapper {
+    width: 1400px;
+    margin: 100px auto;
+  }
+
+  .horizontalLine {
+    margin: 0;
+    gap: 100px;
+  }
+
+  .cardContent {
+    margin: 0;
+    gap: 160px;
+  }
+
+  .cardContent div {
+    align-items: flex-start;
+  }
+
+  .cardContent h3,
+  .cardContent p {
+    padding: 0;
+    text-align: left;
+  }
+}

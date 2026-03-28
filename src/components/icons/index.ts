@@ -16,3 +16,6 @@ export { EagleIcon } from './EagleIcon.tsx';
 export { CrocodileIcon } from './CrocodileIcon.tsx';
 export { LemurIcon } from './LemurIcon.tsx';
 export { PandaIcon } from './PandaIcon.tsx';
+export { HeartIcon } from './HeartIcon.tsx';
+export { MoneyIcon } from './MoneyIcon.tsx';
+export { FoodIcon } from './FoodIcon.tsx';

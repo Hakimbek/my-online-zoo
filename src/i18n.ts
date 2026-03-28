@@ -44,6 +44,24 @@ const resources = {
             "Do you have a special place in your heart for animals? Who are your favorites? Perhaps you'd like to donate to special ones or all our pets? We think it's important for you to choose how your donation is used.",
           favourite: 'Choose your favourite',
         },
+        feed: {
+          title: 'PAY AND FEED',
+          firstCard: {
+            title: 'Your donation has an impact',
+            content:
+              'Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating.',
+          },
+          secondCard: {
+            title: 'Make a donation',
+            content:
+              "You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the pet's name if needed.",
+          },
+          thirdCard: {
+            title: 'Bring your food charity — straight to your favorites pets.',
+            content:
+              'After your donation, the animal receives its favorite foods. You can support your favorite animals or any animal you care about and make a real personal impact. Never doubt that your donation can make a difference even if it is small.',
+          },
+        },
       },
       zoo: {
         title: 'Find where are the animals live',
@@ -109,6 +127,25 @@ const resources = {
           content:
             'В вашем сердце есть особое место для животных? Кто из них вам нравится больше всего? Возможно, вы захотите сделать пожертвование конкретному подопечному или всем нашим питомцам сразу? Мы считаем, что для вас важно иметь возможность самим выбирать, на что пойдет ваша помощь.',
           favourite: 'Питомцы',
+        },
+        feed: {
+          title: 'НАКОРМИТЬ',
+          firstCard: {
+            title: 'Ваше пожертвование имеет значение',
+            content:
+              'Обеспечение наших животных высококачественным и питательным рационом — это лишь один из аспектов заботы в нашем зоопарке. Мы делаем всё возможное, чтобы наши подопечные могли питаться так же, как в естественной среде обитания, при этом следя за тем, чтобы они получали правильное сочетание питательных веществ, белков и витаминов для здоровья и благополучия. Пожалуйста, помогите нам обеспечить животных полезной едой, сделав пожертвование.',
+          },
+          secondCard: {
+            title: 'Сделать пожертвование',
+            content:
+              'Вы можете внести пожертвование с помощью банковской карты без каких-либо комиссий. Это просто и безопасно. Мы не храним личные данные доноров в онлайн-сети. Выберите сумму и, при желании, имя конкретного питомца.',
+          },
+          thirdCard: {
+            title:
+              'Направьте свою заботу и еду напрямую вашим любимым питомцам.',
+            content:
+              'После вашего пожертвования животное получит свой любимый корм. Вы можете поддержать своих любимцев или любое животное, которое вам небезразлично, и внести свой личный вклад. Никогда не сомневайтесь в том, что ваше пожертвование может что-то изменить, даже если оно небольшое.',
+          },
         },
       },
       zoo: {

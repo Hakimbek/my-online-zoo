@@ -2,6 +2,7 @@ import { Animal } from './animal/Animal.tsx';
 import { Welcome } from './welcome/Welcome.tsx';
 import { Donation } from './donation/Donation.tsx';
 import { Pets } from './pets/Pets.tsx';
+import { Feed } from './feed/Feed.tsx';
 
 export const About = () => {
   return (
@@ -10,6 +11,7 @@ export const About = () => {
       <Welcome />
       <Donation />
       <Pets />
+      <Feed />
     </section>
   );
 };
