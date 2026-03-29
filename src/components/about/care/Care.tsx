@@ -1,3 +1,4 @@
+import CareImage from '../../../assets/images/care.png';
 import styles from './Care.module.css';
 
 export const Care = () => {
@@ -9,6 +10,7 @@ export const Care = () => {
           You can help to look after the animals you love with your gift today
         </p>
       </div>
+      <img src={CareImage} alt="Care Image" />
     </div>
   );
 };

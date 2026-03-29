@@ -1,5 +1,8 @@
 .care {
   padding: 50px 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .content {
@@ -27,7 +30,26 @@
   font-size: 18px;
 }
 
+.care img {
+  width: 100%;
+  height: auto;
+}
+
+:global([data-theme='dark']) {
+  .care {
+    background-color: var(--navy);
+  }
+
+  .content p {
+    color: var(--white);
+  }
+}
+
 @media (min-width: 640px) {
+  .care {
+    gap: 100px;
+  }
+
   .content {
     width: 600px;
     padding: 0 20px;
@@ -39,5 +61,20 @@
 
   .content p {
     font-size: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .care {
+    gap: 150px;
+  }
+
+  .content {
+    max-width: 1400px;
+  }
+
+  .care img {
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
