@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Slick from 'react-slick';
+import BambooPanda from '../../../assets/images/bamboo-panda.png';
 import { useEffect, useRef, useState } from 'react';
 import { QuoteIcon, RightArrowIcon } from '../../icons';
 import styles from './Feedback.module.css';
@@ -67,7 +68,7 @@ export const Feedback = () => {
   };
 
   return (
-    <>
+    <div className={styles.feedbackWrapper}>
       <div className={styles.feedback}>
         <div className={styles.content}>
           <h2>{t('about.feedback.title')}</h2>
@@ -110,6 +111,7 @@ export const Feedback = () => {
           <RightArrowIcon />
         </button>
       </div>
-    </>
+      <img src={BambooPanda} alt="Bamboo Panda" />
+    </div>
   );
 };
