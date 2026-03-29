@@ -19,3 +19,4 @@ export { PandaIcon } from './PandaIcon.tsx';
 export { HeartIcon } from './HeartIcon.tsx';
 export { MoneyIcon } from './MoneyIcon.tsx';
 export { FoodIcon } from './FoodIcon.tsx';
+export { QuoteIcon } from './QuoteIcon.tsx';

@@ -62,6 +62,12 @@ const resources = {
               'After your donation, the animal receives its favorite foods. You can support your favorite animals or any animal you care about and make a real personal impact. Never doubt that your donation can make a difference even if it is small.',
           },
         },
+        feedback: {
+          title: 'What our users think',
+          content:
+            'We are continuously striving to improve the experiences of our future guests. Below you can leave your own feedback, or simply view feedback from past clients.',
+          feedback: 'leave feedback',
+        },
       },
       zoo: {
         title: 'Find where are the animals live',
@@ -146,6 +152,12 @@ const resources = {
             content:
               'После вашего пожертвования животное получит свой любимый корм. Вы можете поддержать своих любимцев или любое животное, которое вам небезразлично, и внести свой личный вклад. Никогда не сомневайтесь в том, что ваше пожертвование может что-то изменить, даже если оно небольшое.',
           },
+        },
+        feedback: {
+          title: 'Что думают пользователи',
+          content:
+            'Мы постоянно стремимся улучшать качество обслуживания для наших будущих гостей. Ниже вы можете оставить свой отзыв или просто ознакомиться с отзывами наших прошлых клиентов.',
+          feedback: 'Оставить отзыв',
         },
       },
       zoo: {

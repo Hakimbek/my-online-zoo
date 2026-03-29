@@ -70,8 +70,6 @@ export const Pets = () => {
     ],
   };
 
-  if (loading) return <p>Loading...</p>;
-
   return (
     <div className={styles.pets}>
       <div className={styles.content}>

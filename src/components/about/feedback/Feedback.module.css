@@ -1,0 +1,219 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--navy);
+}
+
+.content {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: var(--white);
+}
+
+.content p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.slider {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.slideWrapper {
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.slideWrapper > div {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardIcon {
+  padding-top: 20px;
+}
+
+.cardTitle {
+  min-height: 65px;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 26px;
+}
+
+.cardText {
+  min-height: 200px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cardName {
+  padding: 50px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav {
+  display: none;
+  gap: 55px;
+  margin-left: 30px;
+}
+
+.nav button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav button path {
+  fill: var(--white);
+}
+
+.nav button:hover {
+  background-color: var(--turquoise);
+}
+
+.nav button:first-child {
+  transform: rotate(-180deg);
+}
+
+.feedbackButton {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--navy);
+}
+
+.feedbackButton button {
+  width: 300px;
+  padding: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: MontserratSemiBold, sans-serif;
+  color: var(--white);
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.feedbackButton button path {
+  fill: var(--white);
+}
+
+.feedbackButton button:hover {
+  background-color: var(--turquoise);
+}
+
+@media (min-width: 640px) {
+  .content {
+    padding: 0 20px;
+  }
+
+  .content h2 {
+    width: 440px;
+    text-align: left;
+    font-size: 54px;
+  }
+
+  .content p {
+    width: 570px;
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .slider {
+    max-width: 540px;
+  }
+
+  .cardTitle,
+  .cardText {
+    min-height: auto;
+  }
+
+  .feedbackButton {
+    justify-content: flex-start;
+    padding-left: 200px;
+  }
+
+  .feedbackButton button {
+    width: 345px;
+    padding: 26px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding: 0 40px;
+  }
+
+  .slider {
+    max-width: 1060px;
+  }
+
+  .slideWrapper {
+    padding: 30px;
+  }
+
+  .slideWrapper > div {
+    padding: 0 50px;
+  }
+
+  .cardIcon {
+    padding: 20px 0;
+  }
+
+  .cardTitle,
+  .cardText,
+  .cardName {
+    text-align: left;
+  }
+
+  .nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 1920px) {
+  .feedback {
+    flex-direction: row;
+  }
+
+  .content {
+    padding: 0 0 0 200px;
+  }
+}
