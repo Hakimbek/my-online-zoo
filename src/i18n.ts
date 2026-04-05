@@ -68,6 +68,23 @@ const resources = {
             'We are continuously striving to improve the experiences of our future guests. Below you can leave your own feedback, or simply view feedback from past clients.',
           feedback: 'leave feedback',
         },
+        care: {
+          title: 'care for the animals you love',
+          content:
+            'You can help to look after the animals you love with your gift today',
+          favourite: 'Choose your favourite',
+          feed: 'Feed',
+          cards: {
+            first:
+              'Your $30 could give Lucas a slice of panda cake, made with our secret recipe.',
+            second:
+              "With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its natural habitat.",
+            third:
+              'Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.',
+            forth:
+              'Sam & Lora have hatched and raised numerous young and will be happy with your help.',
+          },
+        },
       },
       zoo: {
         title: 'Find where are the animals live',
@@ -158,6 +175,23 @@ const resources = {
           content:
             'Мы постоянно стремимся улучшать качество обслуживания для наших будущих гостей. Ниже вы можете оставить свой отзыв или просто ознакомиться с отзывами наших прошлых клиентов.',
           feedback: 'Оставить отзыв',
+        },
+        care: {
+          title: 'Заботьтесь о любимых животных',
+          content:
+            'Ваше пожертвование сегодня поможет нам заботиться о животных, которых вы любите',
+          favourite: 'Выберите любимца',
+          feed: 'КОРМИТЬ',
+          cards: {
+            first:
+              'Ваши $30 могут подарить панде Лукасу порцию панда-кейка, приготовленного по нашему секретному рецепту.',
+            second:
+              'С вашей поддержкой мы сможем давать Энди его любимые фрукты. Особенно в те сезоны, когда они не растут в его естественной среде обитания.',
+            third:
+              'Ваши $150 помогут обеспечивать уход за суматранским тигром Сеньей в течение трёх недель.',
+            forth:
+              'Сэм и Лора вывели и вырастили множество птенцов, и они будут рады вашей помощи.',
+          },
         },
       },
       zoo: {
