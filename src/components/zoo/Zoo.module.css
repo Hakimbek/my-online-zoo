@@ -1,0 +1,173 @@
+.zoo {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cams {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h2 {
+  padding: 20px 0;
+  margin: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--turquoise);
+}
+
+.title button {
+  display: none;
+}
+
+.options h4 {
+  padding: 20px 0;
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.options > div {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.options img {
+  width: 140px;
+  height: 110px;
+}
+
+.cams > button {
+  width: 300px;
+  padding: 11px 0;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: MontserratSemiBold, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cams > button:hover {
+  background-color: var(--dark-orange);
+}
+
+:global([data-theme='dark']) {
+  .zoo {
+    background-color: var(--navy);
+  }
+
+  .options h4 {
+    color: var(--turquoise);
+  }
+}
+
+@media (min-width: 640px) {
+  .title h2 {
+    font-size: 42px;
+    padding: 26px 0;
+  }
+
+  .options > div {
+    width: 600px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cams img {
+    margin: 0 auto;
+    max-width: 1400px;
+    max-height: 787px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .title h2 {
+    font-size: 54px;
+    padding: 30px 0;
+  }
+
+  .title button {
+    width: 240px;
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: MontserratSemiBold, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .title button:hover {
+    background-color: var(--dark-orange);
+  }
+
+  .options h4 {
+    padding: 30px 0;
+    font-size: 42px;
+  }
+
+  .options > div {
+    width: 1000px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .options img {
+    width: 265px;
+    height: 209px;
+  }
+
+  .cams > button {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .title {
+    gap: 198px;
+  }
+
+  .options > div {
+    width: 1200px;
+    margin-bottom: 150px;
+    gap: 40px;
+  }
+
+  .options h4 {
+    padding-top: 100px;
+  }
+
+  .options img {
+    padding: 0;
+    margin: 0;
+    width: 320px;
+  }
+}

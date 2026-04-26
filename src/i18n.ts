@@ -88,6 +88,11 @@ const resources = {
       },
       zoo: {
         title: 'Find where are the animals live',
+        cams: {
+          title: 'live panda cams',
+          subtitle: 'more live views ',
+          donate: 'Donate now',
+        },
       },
       contact: {
         title: 'Get in touch',
@@ -196,6 +201,11 @@ const resources = {
       },
       zoo: {
         title: 'Узнайте, где живут животные',
+        cams: {
+          title: 'прямые трансляции',
+          subtitle: 'больше эфиров ',
+          donate: 'Пожертвовать',
+        },
       },
       contact: {
         title: 'Связаться',

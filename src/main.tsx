@@ -11,6 +11,7 @@ import { ThemeProvider } from './context/ThemeContext.tsx';
 import { Contact } from './components/contact/Contact.tsx';
 import { Map } from './components/map/Map.tsx';
 import { About } from './components/about/About.tsx';
+import { Zoo } from './components/zoo/Zoo.tsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './index.css';
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'zoos',
-        element: 'zoos',
+        element: <Zoo />,
       },
       {
         path: 'contact',
